@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewData["Title"] = "Resources";
+}
+
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8">
+            <article>
+                <h1>Developer Resources</h1>
+                <p>
+                    Building websites from scratch can be very challenging at times depending on it's complexity.
+                    You may be wondering how is it possible that you know the solution to every problem a mock may present you? The answer is, simply, that you can't!
+                </p>
+                <p>
+                    Much like any other subject, it's impossible for any developer to know every thing there is to know about web development.
+                    The most important skill of development is knowing how to research and learn new technologies and features as needed.
+                    In my learning path, i am coming to realize that <span>DOCUMENTATION (through books and or internet research) and DEBUGGING SKILLS</span>
+                    are criticals for solutions to new problems. This material will give you the tools and confidence to find solutions to issues that arise as you build websites.
+                </p>
+            </article>
+            <article>
+                <h2>DOCUMENTATION</h2>
+                <p>
+                    Every well-developed language or framework has a place where you can look up all of its features. This library of information is called a
+                    <em>language's documentation.</em> Here are a few i have found highly relevant.
+                </p>
+                <div>
+                    <h3><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a></h3>
+                    <p>
+                        Referred to as MDN, it contains the complete documentation for HTML, CSS, JavaScript, and many other essential tools of web development.
+                        For instance to see the documentation for a specific CSS property, navigate to the <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+                        website and search for that property in the search bar at the top of the page, then click on the link for that property.
+                    </p>
+                    <p>
+                        For example, let's search for the <strong>font-weight</strong> property.Once you land on a property's documentation page you can read all of the information about it.
+                        For example, <strong>font-weight</strong> starts with a description of the property. The "Values" section lists all of the possible values for <strong>font-weight</strong>.
+                        There are some values you already know, such as <strong>normal and bold</strong>, but there are also new values, such as <strong>lighter and bolder.</strong>
+                    </p>
+                </div>
+                <div>
+                    <h3><a href="https://www.google.com/" target="_blank">Google</a></h3>
+                    <p>
+                        Now what if you don't even know what property you need? It is not surprising that using Google is a great way to read other developers' solutions to problems.
+                        Googling the problem you're trying to solve and the language you're using will return many useful answers.
+                    </p>
+                    <p>
+                        For example, if you want to know how to change the size of text, you could google "how to change text size using CSS." After doing this,
+                        you will receive multiple links to information about the <strong>font-size</strong> property.
+                    </p>
+                </div>
+                <div>
+                    <h3><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></h3>
+                    <p>
+                        Stack Overflow is a useful resource where developers ask and answer questions. I use it frequently to find answers to some questions, and learn from experienced developers.
+                    </p>
+                    <p>
+                        To search for a question on Stack Overflow, type your question and programming language into the search bar and find the question threads that seem relevant.
+                        Reading all of the top-voted answers to a Stack Overflow question can give you multiple solutions to try as well as an understanding of why one solution might be better than another.
+                    </p>
+                    <p>
+                        For example, i needed to know how to make a button to have rounded edges. In <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> search box i typed:
+                        ..How to make buttons round using CSS.. The most relevant suggestion was to use <strong>border-radius</strong> property in CSS.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2>DEBUGGING With the Chrome DevTools</h2>
+                <p>
+                    The <a href="https://developer.chrome.com/devtools" target="_blank">Chrome Developer Tools</a> (DevTools for short), are defined as a set of web authoring and debugging tools built into Google Chrome.
+                    It provide web developers deep access into the internals of the browser and their web application.
+                </p>
+                <p>
+                    There are two ways to access the DevTools.
+                    <ol>
+                        <li>Select the Chrome menu <strong>Chrome</strong> Menu at the top-right of your browser window, then select Tools then Developer Tools.</li>
+                        <li>Right-click on any page element and select <strong>Inspect Element.</strong></li>
+                    </ol>
+                </p>
+                <p>
+                    Once opened, the DevTools are organised into task-oriented groups in the toolbar at the top of the window.
+                    Each toolbar item and corresponding panel let you work with a specific type of page or app information. There are eight main groups of tools available.
+                </p>
+                <ul>
+                    <li>Elements (for inspection and On-The-Fly editing of the DOM elements)</li>
+                    <li>Resources (this panel lets you inspect resources that are loaded in the inspected page. It lets you interact with HTML5 Database, Local Storage, Cookies, AppCache, etc.)</li>
+                    <li>Network (provides insights into resources that are requested and downloaded over the network in real time, helping optimize your page.)</li>
+                    <li>Sources</li>
+                    <li>Timeline (gives you a complete overview of where time is spent when loading and using your web app or page.)</li>
+                    <li>Profiles (this panel lets you profile the execution time and memory usage of a web app or page.)</li>
+                    <li>Audits (this panel can analyze a page as it loads. Then provides suggestions and optimizations for decreasing page load time.)</li>
+                    <li>Console (for testing Javascript web pages and applications)</li>
+
+                </ul>
+
+            </article>
+        </div>
+
+        <div class="col-sm-3 offset-sm-1">
+            @Html.Partial("_aside")
+        </div>
+    </div>
+</main>

@@ -1,0 +1,183 @@
+﻿/*.. nav section .. */
+.upper-nav {
+    height: 30px;
+    font-size: 10px;
+    font-weight: 700px;
+    background-color: lightgrey;
+    text-transform: uppercase;
+}
+
+    .upper-nav ul {
+        float: right;
+        line-height: 40px;
+    }
+
+    .upper-nav li {
+        position: relative;
+        float: left;
+        display: block;
+        padding-right: 30px;
+    }
+
+    .upper-nav a {
+        padding-bottom: 20px;
+        color: #80847c94;
+    }
+/*.. name section..*/
+.siteName {
+    font-family: 'Diplomata SC', cursive;
+}
+/*.. side bar section..*/
+.search, .social, .advertisement, .email {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(223, 140, 63, 0.651);
+    background-color: #ffffc7;
+}
+
+    .advertisement img {
+        width: 17rem;
+        margin-top: 0.5rem;
+    }
+
+.side-ads {
+    font-size: 15px;
+    text-align: center;
+    color: #80847c94;
+}
+
+.side-title {
+    font-weight: bold;
+    color: #441675;
+    /* margin-top: 1.5rem;*/
+}
+
+.social-apps {
+    display: flex;
+}
+
+.app-icon {
+    color: white;
+}
+
+.facebook {
+    background-color: #3e64ad;
+}
+
+.twitter {
+    background-color: #58ccff;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+.facebook, .twitter, .google {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0.3rem;
+    width: 33%;
+    text-align: center;
+}
+/*.. author section..*/
+#poster {
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.jr {
+    background-color: #80847c94;
+    padding: 0 20px;
+}
+
+    .jr p {
+        font-family: 'Lily Script One', cursive;
+    }
+/*.. main content..*/
+#posts {
+    padding-top: 1.5rem;
+    background-color: #c0f9f4;
+}
+
+    #posts h4 {
+        text-align: right;
+        font-family: 'Faster One', cursive;
+        color: red;
+    }
+    #posts a {
+        margin:1.5rem;
+    }
+
+.media {
+    padding-bottom: 1rem;
+}
+
+.media-body {
+    padding-left: 10px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.media-object {
+    width: 9rem;
+    border: 1px solid blue;
+}
+
+#carouselGallery {
+    border: 3px solid rebeccapurple;
+    margin-top: 15px;
+}
+
+#freelance-media {
+    width: 100%;
+}
+
+#stack-title {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+#stack-media {
+    margin-left: 3rem;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#conclusion {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.description {
+    background-color: #90bdd46e;
+    margin: 2rem;
+    outline: 2rem inset darkseagreen;
+    padding-top: 1.5rem;
+}
+
+    .description img {
+        width: 15rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid darkslateblue;
+    }
+
+.designer h3 {
+    font-family: 'Niconne', cursive;
+    background-color: #d8b5dedb;
+}
+
+.designer p {
+    font-family: 'Racing Sans One', cursive;
+}
+
+.developer p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.15rem;
+}
+
+.developer h3 {
+    background-color: #999fabed;
+}

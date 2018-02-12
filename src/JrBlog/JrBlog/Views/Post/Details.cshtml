@@ -1,0 +1,74 @@
+﻿
+@model ApplicationCore.Entities.Post
+
+@*@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+@Html.DisplayFor(model => model.content)*@
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>@Html.DisplayFor(Model => Model.Title)</h1>
+            <h4>Author: @Html.DisplayFor(Model => Model.Author)</h4>
+            
+            <article>
+                @Html.Raw(Model.content)
+            </article>
+        
+        </div>
+
+        <div class="col-md-3 offset md-1">
+            @Html.Partial("_aside")
+        </div>
+
+        
+    </div>
+</main>
+
+
+
+
+@*<div>
+        <h4>Post</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Author)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Author)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.content)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.content)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.permalink)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.permalink)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.id)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.id)
+            </dd>
+        </dl>
+    </div>*@
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    <a asp-action="Index">Back to List</a>
+</div>

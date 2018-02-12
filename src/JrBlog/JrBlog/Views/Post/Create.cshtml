@@ -1,0 +1,55 @@
+﻿@model ApplicationCore.Entities.Post
+
+@{
+    ViewData["Title"] = "Create New Post";
+    ViewData["Action"] = "Create";
+}
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Partial("_side")
+        </div>
+
+        <div class="col-md-6">
+            <h2>Create New Post</h2>
+
+            @Html.Partial("_EditPost", Model, ViewData)
+
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        <div class="col-md-3">
+
+            @Html.Partial("_aside")
+
+        </div>
+    </div>
+</main>
+       
+           @*<div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+     </div>
+    </main>
+
+
+
+<h2>Create New Post</h2>
+
+<h4>Post</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @Html.Partial("_EditPost", Model, ViewData)
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

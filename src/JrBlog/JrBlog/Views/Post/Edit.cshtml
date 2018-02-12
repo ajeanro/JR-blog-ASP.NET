@@ -1,0 +1,38 @@
+﻿
+@model ApplicationCore.Entities.Post
+
+@{
+    ViewData["Title"] = "Edit Post";
+    ViewData["Action"] = "Edit";
+}
+
+<h2>Edit Post</h2>
+
+<h4>Post</h4>
+<hr />
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Partial("_side")
+        </div>
+
+        <div class="col-md-6">
+            <h2>Edit Post</h2>
+
+            @Html.Partial("_EditPost", Model, ViewData)
+
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        <div class="col-md-3">
+
+            @Html.Partial("_aside")
+
+        </div>
+    </div>
+</main>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
